@@ -1,0 +1,57 @@
+<%- include ('partials/header.ejs') %>
+    <%- include ('partials/main_nav.ejs') %>
+
+        <!--<img src="img/logo.png" alt="logo">-->
+
+        <main class="container">
+            <div class="row text-center m-2">
+                <h2 style="color:#6a0888;">Contact Me</h2>
+                <br>
+            </div>
+            <div class="row">
+                <div class="col-md-6 offset-md-3">
+                    <div class="panel panel-default">
+                        <div class="panel-body">
+                            <form action="/" method="POST">
+                                <div class="form-group">
+                                    <label for="firstName">First Name</label>
+                                    <input type="text" class="form-control" id="firstName" name="firstName" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="lastName">Last Name</label>
+                                    <input type="text" class="form-control" id="lastName" name="lastName" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="contactNumber">Contact Number</label>
+                                    <input type="tel" class="form-control" id="contactNumber" name="contactNumber"
+                                        required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="email">Email Address</label>
+                                    <input type="email" class="form-control" id="email" name="email" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="message">Message</label>
+                                    <textarea class="form-control" id="message" name="message" rows="5"
+                                        required></textarea>
+                                </div>
+                                <button type="submit" class="btn btn-primary m-3">Send
+                                    Message</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row text-center m-2">
+                <h4>Or Contact me:</h4>
+                <br>
+                <p>Contact Number: +1 (437)-553-3646</p>
+                <p>Email: hghelani@my.centennialcollege.ca</p>
+            </div>
+            <br>
+            <br>
+            <br>
+        </main>
+
+        <%- include ('partials/bottom_nav.ejs') %>
+            <%- include ('partials/footer.ejs') %>
